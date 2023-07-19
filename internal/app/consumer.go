@@ -7,7 +7,7 @@ import (
 func NewConsumer() (*kafka.Consumer, error) {
 	c, err := kafka.NewConsumer(&kafka.ConfigMap{
 		"bootstrap.servers": "localhost:19092",
-		"group.id":          "cg-1",
+		"group.id":          "group",
 	})
 	if err != nil {
 		return nil, err
