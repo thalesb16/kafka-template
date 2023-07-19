@@ -41,6 +41,7 @@ services:
 
   kafka-1:
     image: confluentinc/cp-kafka:latest
+    container_name: broker-1
     network_mode: host
     depends_on:
       - zookeeper-1
@@ -55,6 +56,7 @@ services:
 
   kafka-2:
     image: confluentinc/cp-kafka:latest
+    container_name: broker-2
     network_mode: host
     depends_on:
       - zookeeper-1
@@ -69,6 +71,7 @@ services:
 
   kafka-3:
     image: confluentinc/cp-kafka:latest
+    container_name: broker-3
     network_mode: host
     depends_on:
       - zookeeper-1
