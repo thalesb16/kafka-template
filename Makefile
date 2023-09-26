@@ -5,7 +5,7 @@ env-down:
 	docker-compose down
 
 run-consumer:
-	go run cmd/consumer/consumer.go
+	go run cmd/reader/reader.go
 
 run-producer:
-	go run cmd/producer/producer.go
+	go run cmd/writer/writer.go
